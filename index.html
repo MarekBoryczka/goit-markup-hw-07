@@ -17,7 +17,7 @@
   <body>
     <header class="container header-container">
       <nav class="header-nav">
-        <a class="header-nav__logo" href="./index.html"><span class="span_logo">Web</span>Studio</a>
+        <a class="logo" href="./index.html"> <span class="logo__brand-color">Web</span>Studio</a>
         <ul class="header-nav__list">
           <li class="header-nav__item">
             <a class="header-nav__link is_active" href="./index.html">Agencja</a>
@@ -30,18 +30,18 @@
           </li>
         </ul>
       </nav>
-      <ul class="header_list_2">
-        <li class="item_list_2">
-          <a class="header_contact" href="mailto:info@devstudio.com">
-            <svg class="header_contact_icon" width="16" height="12">
+      <ul class="header-contact">
+        <li class="header-contact__item">
+          <a class="header-contact__link" href="mailto:info@devstudio.com">
+            <svg class="header-contact__icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com</a
           >
         </li>
-        <li class="item_list_2">
-          <a class="header_contact" href="tel:+48111111111">
-            <svg class="header_contact_icon" width="10" height="16">
+        <li class="header-contact__item">
+          <a class="header-contact__link" href="tel:+48111111111">
+            <svg class="header-contact__icon" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
             +48 111 111 111</a
@@ -288,57 +288,66 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer_div">
-        <div class="footer_div_logo">
-          <a class="footer_logo" href="./index.html"><span class="span_logo">Web</span>Studio</a>
+      <div class="container footer-div">
+        <div class="footer-logo">
+          <a class="footer-logo__logo" href="./index.html"
+            ><span class="logo__brand-color">Web</span>Studio</a
+          >
           <address>
-            <ul class="list_adress">
-              <li class="footer_adress">m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li><a class="footer_adress" href="mailto:info@example.com">info@example.com</a></li>
-              <li><a class="footer_adress" href="tel:+48111111111">+48 111 111 111</a></li>
+            <ul class="footer-adress">
+              <li class="footer-adress__item">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li>
+                <a class="footer-adress__item" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li><a class="footer-adress__item" href="tel:+48111111111">+48 111 111 111</a></li>
             </ul>
           </address>
         </div>
-        <div class="footer_social">
-          <h2 class="footer_title">dołącz do nas</h2>
-          <ul class="footer_list_icon">
-            <li class="footer_item_icon">
-              <div class="footer_bg_icon">
-                <svg class="footer_icon" width="20" height="20">
+        <div class="footer-social">
+          <h2 class="footer-social__title">dołącz do nas</h2>
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <div class="footer-social__bg">
+                <svg class="footer-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </div>
             </li>
-            <li class="footer_item_icon">
-              <div class="footer_bg_icon">
-                <svg class="footer_icon" width="20" height="20">
+            <li class="footer-social__item">
+              <div class="footer-social__bg">
+                <svg class="footer-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </div>
             </li>
-            <li class="footer_item_icon">
-              <div class="footer_bg_icon">
-                <svg class="footer_icon" width="20" height="20">
+            <li class="footer-social__item">
+              <div class="footer-social__bg">
+                <svg class="footer-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </div>
             </li>
-            <li class="footer_item_icon">
-              <div class="footer_bg_icon">
-                <svg class="footer_icon" width="20" height="20">
+            <li class="footer-social__item">
+              <div class="footer-social__bg">
+                <svg class="footer-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </div>
             </li>
           </ul>
         </div>
-        <div class="div_form">
-          <h2 class="footer_form_title">zapisz się do newslettera</h2>
-          <form class="footer_form">
-            <input class="footer_input" type="email" name="userEmail" placeholder="E-mail" />
-            <button class="footer_form_btn" type="submit">
+        <div class="footer-form">
+          <h2 class="footer-form__title">zapisz się do newslettera</h2>
+          <form class="form-sign-up">
+            <input
+              class="form-sign-up__input"
+              type="email"
+              name="userEmail"
+              placeholder="   E-mail"
+            />
+            <button class="form-sign-up__btn" type="submit">
               Zapisz się
-              <svg class="footer_btn_icon" width="24" height="24">
+              <svg class="form-sign-up__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
