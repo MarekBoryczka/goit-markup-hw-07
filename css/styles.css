@@ -225,16 +225,16 @@ body {
   padding-bottom: 50px;
 }
 
-.advantages_images {
+.advantages-content {
   display: flex;
   justify-content: space-between;
 }
 
-.advantages_image {
+.advantages-content__figure {
   position: relative;
 }
 
-.advantages_figcaption {
+.advantages-content__figcaption {
   width: 370px;
   height: 70px;
   color: var(--text_on_background-color);
@@ -254,7 +254,7 @@ body {
   background-color: var(--our-team-color);
 }
 
-.title_our_team {
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 42.19px;
@@ -262,12 +262,12 @@ body {
   padding-bottom: 32px;
 }
 
-.cards_team {
+.team-list {
   display: flex;
   justify-content: space-between;
 }
 
-.item_team {
+.team-card {
   width: 270px;
   height: 428px;
   background: #ffffff;
@@ -276,13 +276,13 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.item_team h3 {
+.team-card h3 {
   font-weight: 500;
   text-align: center;
   padding-top: 30px;
 }
 
-.item_team p {
+.team-card p {
   color: var(--lorem-ipsum-color);
   text-align: center;
   font-weight: 400;
@@ -290,25 +290,25 @@ body {
   padding-bottom: 16px;
 }
 
-.container_team_icon {
+.team-card__container {
   display: flex;
   justify-content: center;
   column-gap: 10px;
 }
 
-.team_bg_icon {
+.team-card__bg {
   width: 44px;
   height: 44px;
   padding: 12px;
   border-radius: 50px;
 }
 
-.team_icon {
+.team-card__icon {
   fill: var(--icons-color);
 }
 
-.team_bg_icon:hover,
-.team_bg_icon:focus {
+.team-card__bg:hover,
+.team-card__bg:focus {
   transition-property: background-color, color, box-shadow, border, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -317,8 +317,8 @@ body {
   cursor: pointer;
 }
 
-.team_bg_icon:hover .team_icon,
-.team_bg_icon:focus .team_icon {
+.team-card__bg:hover .team-card__icon,
+.team-card__bg:focus .team-card__icon {
   transition-property: background-color, color, box-shadow, border, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
