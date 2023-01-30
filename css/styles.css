@@ -326,7 +326,7 @@ body {
   fill: var(--text_on_background-color);
 }
 
-.title_client {
+.client-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 42.19px;
@@ -334,22 +334,21 @@ body {
   padding-bottom: 32px;
 }
 
-.list_client {
+.client {
   display: flex;
   justify-content: space-between;
 }
 
-.border_client {
+.client__item {
   width: 170px;
   height: 92px;
   padding: 16px 32px;
-
   border: 1px solid var(--icons-color);
   border-radius: 4px;
 }
 
-.border_client:hover,
-.border_client:focus {
+.client__item:hover,
+.client__item:focus {
   transition-property: background-color, color, box-shadow, border, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -360,8 +359,8 @@ body {
   cursor: pointer;
 }
 
-.border_client:hover .client_icon,
-.border_client:focus .client_icon {
+.client__item:hover .client__icon,
+.client__item:focus .client__icon {
   transition-property: background-color, color, box-shadow, border, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -369,7 +368,7 @@ body {
   fill: var(--brand-color);
 }
 
-.client_icon {
+.client__icon {
   fill: var(--icons-color);
 }
 
