@@ -1,0 +1,33 @@
+.lorem__list {
+  display: flex;
+  justify-content: center;
+}
+
+.lorem__list > .lorem__item:not(:last-child) {
+  padding-right: 30px;
+}
+
+.lorem__item h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.lorem__item p {
+  color: var(--lorem-ipsum-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.lorem-icon {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px;
+}
