@@ -1,21 +1,13 @@
-.advantages-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-.advantages-content {
+.advantages {
   display: flex;
   justify-content: space-between;
 }
 
-.advantages-content__figure {
+.advantages__figure {
   position: relative;
 }
 
-.advantages-content__figcaption {
+.advantages__figcaption {
   width: 370px;
   height: 70px;
   color: var(--text_on_background-color);

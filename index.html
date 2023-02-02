@@ -17,10 +17,10 @@
   <body>
     <header class="container header-container">
       <nav class="header-nav">
-        <a class="logo" href="./index.html"> <span class="logo__brand-color">Web</span>Studio</a>
+        <a class="logo" href="./index.html">Web<span class="logo--dark">Studio</span></a>
         <ul class="header-nav__list">
           <li class="header-nav__item">
-            <a class="header-nav__link is_active" href="./index.html">Agencja</a>
+            <a class="header-nav__link --is_active" href="./index.html">Agencja</a>
           </li>
           <li class="header-nav__item">
             <a class="header-nav__link" href="./portfolio.html">Portfolio</a>
@@ -50,59 +50,59 @@
       </ul>
     </header>
     <main>
-      <section class="section headline-section">
+      <section class="section headline__section">
         <div class="container headline-background">
           <h1 class="headline__title">efektywne rozwiązania<br />dla waszego biznesu</h1>
           <button class="headline__button" type="button" data-modal-open>Zamów usługę</button>
         </div>
       </section>
-      <section class="section lorem">
+      <section class="section">
         <div class="container">
-          <ul class="lorem__list">
-            <li class="lorem__item">
-              <div class="lorem-icon">
+          <ul class="offer">
+            <li class="offer__item">
+              <div class="offer__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-              <h3>LOREM IPSUM</h3>
-              <p>
+              <h3 class="offer__title">LOREM IPSUM</h3>
+              <p class="offer__subtitle">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="lorem__item">
-              <div class="lorem-icon">
+            <li class="offer__item">
+              <div class="offer__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
-              <h3>LOREM IPSUM</h3>
-              <p>
+              <h3 class="offer__title">LOREM IPSUM</h3>
+              <p class="offer__subtitle">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="lorem__item">
-              <div class="lorem-icon">
+            <li class="offer__item">
+              <div class="offer__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3>LOREM IPSUM</h3>
-              <p>
+              <h3 class="offer__title">LOREM IPSUM</h3>
+              <p class="offer__subtitle">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="lorem__item">
-              <div class="lorem-icon">
+            <li class="offer__item">
+              <div class="offer__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
-              <h3>LOREM IPSUM</h3>
-              <p>
+              <h3 class="offer__title">LOREM IPSUM</h3>
+              <p class="offer__subtitle">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
@@ -112,135 +112,141 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="advantages-title">Czym się zajmujemy</h2>
-          <div class="advantages-content">
-            <figure class="advantages-content__figure">
-              <img src="images/img1.jpg" alt="pisaniekodunalaptopie" height="294" width="370" />
-              <figcaption class="advantages-content__figcaption">aplikacje komputerowe</figcaption>
-            </figure>
-            <figure class="advantages-content__figure">
-              <img
-                src="images/img2.jpg"
-                alt="tworzenieaplikcjimobilnych"
-                height="294"
-                width="370"
-              />
-              <figcaption class="advantages-content__figcaption">aplikacje mobilne</figcaption>
-            </figure>
-            <figure class="advantages-content__figure">
-              <img src="images/img3.jpg" alt="stylizacjaaplikacji" height="294" width="370" />
-              <figcaption class="advantages-content__figcaption">rozwiązania graficzne</figcaption>
-            </figure>
-          </div>
+          <h2 class="section__header">Czym się zajmujemy</h2>
+          <ul class="advantages">
+            <li>
+              <figure class="advantages__figure">
+                <img src="images/img1.jpg" alt="pisaniekodunalaptopie" height="294" width="370" />
+                <figcaption class="advantages__figcaption">aplikacje komputerowe</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="advantages__figure">
+                <img
+                  src="images/img2.jpg"
+                  alt="tworzenieaplikcjimobilnych"
+                  height="294"
+                  width="370"
+                />
+                <figcaption class="advantages__figcaption">aplikacje mobilne</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="advantages__figure">
+                <img src="images/img3.jpg" alt="stylizacjaaplikacji" height="294" width="370" />
+                <figcaption class="advantages__figcaption">rozwiązania graficzne</figcaption>
+              </figure>
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="section our_team">
+      <section class="section section--dark">
         <div class="container">
-          <h2 class="team-title">Nasz zespół</h2>
-          <ul class="team-list">
-            <li class="team-card">
+          <h2 class="section__header">Nasz zespół</h2>
+          <ul class="team">
+            <li class="team__card">
               <img src="images/img4.jpg" alt="osoba1" width="270" height="260" />
-              <h3>John Doe</h3>
-              <p>Product Designer</p>
-              <div class="team-card__container">
-                <div class="team-card__bg">
-                  <svg class="team-card__icon" width="20" height="20">
+              <h3 class="team__title">John Doe</h3>
+              <p class="team__subtitle">Product Designer</p>
+              <div class="team__container">
+                <div class="team__bg">
+                  <svg class="team__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </div>
-                <div class="team-card__bg">
-                  <svg class="team-card__icon" width="20" height="20">
+                <div class="team__bg">
+                  <svg class="team__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </div>
-                <div class="team-card__bg">
-                  <svg class="team-card__icon" width="20" height="20">
+                <div class="team__bg">
+                  <svg class="team__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </div>
-                <div class="team-card__bg">
-                  <svg class="team-card__icon" width="20" height="20">
+                <div class="team__bg">
+                  <svg class="team__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </div>
               </div>
             </li>
-            <li class="team-card">
+            <li class="team__card">
               <img src="images/img5.jpg" alt="osoba2" width="270" height="260" />
-              <h3>John Doe</h3>
-              <p>Fronted Developer</p>
-              <div class="team-card__container">
-                <div class="team-card__bg">
-                  <svg class="team-card__icon" width="20" height="20">
+              <h3 class="team__title">John Doe</h3>
+              <p class="team__subtitle">Fronted Developer</p>
+              <div class="team__container">
+                <div class="team__bg">
+                  <svg class="team__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </div>
-                <div class="team-card__bg">
-                  <svg class="team-card__icon" width="20" height="20">
+                <div class="team__bg">
+                  <svg class="team__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </div>
-                <div class="team-card__bg">
-                  <svg class="team-card__icon" width="20" height="20">
+                <div class="team__bg">
+                  <svg class="team__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </div>
-                <div class="team-card__bg">
-                  <svg class="team-card__icon" width="20" height="20">
+                <div class="team__bg">
+                  <svg class="team__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </div>
               </div>
             </li>
-            <li class="team-card">
+            <li class="team__card">
               <img src="images/img6.jpg" alt="osoba3" width="270" height="260" />
-              <h3>John Doe</h3>
-              <p>Marketing</p>
-              <div class="team-card__container">
-                <div class="team-card__bg">
-                  <svg class="team-card__icon" width="20" height="20">
+              <h3 class="team__title">John Doe</h3>
+              <p class="team__subtitle">Marketing</p>
+              <div class="team__container">
+                <div class="team__bg">
+                  <svg class="team__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </div>
-                <div class="team-card__bg">
-                  <svg class="team-card__icon" width="20" height="20">
+                <div class="team__bg">
+                  <svg class="team__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </div>
-                <div class="team-card__bg">
-                  <svg class="team-card__icon" width="20" height="20">
+                <div class="team__bg">
+                  <svg class="team__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </div>
-                <div class="team-card__bg">
-                  <svg class="team-card__icon" width="20" height="20">
+                <div class="team__bg">
+                  <svg class="team__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </div>
               </div>
             </li>
-            <li class="team-card">
+            <li class="team__card">
               <img src="images/img7.jpg" alt="osoba4" width="270" height="260" />
-              <h3>John Doe</h3>
-              <p>UI Designer</p>
-              <div class="team-card__container">
-                <div class="team-card__bg">
-                  <svg class="team-card__icon" width="20" height="20">
+              <h3 class="team__title">John Doe</h3>
+              <p class="team__subtitle">UI Designer</p>
+              <div class="team__container">
+                <div class="team__bg">
+                  <svg class="team__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </div>
-                <div class="team-card__bg">
-                  <svg class="team-card__icon" width="20" height="20">
+                <div class="team__bg">
+                  <svg class="team__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </div>
-                <div class="team-card__bg">
-                  <svg class="team-card__icon" width="20" height="20">
+                <div class="team__bg">
+                  <svg class="team__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </div>
-                <div class="team-card__bg">
-                  <svg class="team-card__icon" width="20" height="20">
+                <div class="team__bg">
+                  <svg class="team__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </div>
@@ -251,7 +257,7 @@
       </section>
       <section class="section">
         <div class="container">
-          <h3 class="client-title">Nasi klienci</h3>
+          <h3 class="section__header">Nasi klienci</h3>
           <ul class="client">
             <li class="client__item">
               <svg class="client__icon" width="106" height="60">
@@ -288,11 +294,9 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-div">
+      <div class="container container__footer">
         <div class="footer-logo">
-          <a class="footer-logo__logo" href="./index.html"
-            ><span class="logo__brand-color">Web</span>Studio</a
-          >
+          <a class="logo" href="./index.html">Web<span class="logo--light">Studio</span></a>
           <address>
             <ul class="footer-adress">
               <li class="footer-adress__item">m. Warszawa, Aleje Jerozolimskie 21</li>

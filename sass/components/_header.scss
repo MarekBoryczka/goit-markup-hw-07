@@ -1,28 +1,8 @@
-.logo,
-.footer-logo__logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-}
-
-.logo__brand-color {
-  color: var(--brand-color);
-}
-
-.logo {
-  color: var(--main-color);
-  margin-right: 93px;
-}
-
-.footer-logo__logo {
-  color: var(--text_on_background-color);
-}
-
 .header-border {
   border-bottom: 1px solid #ececec;
 }
 
-.is_active::after {
+.--is_active::after {
   content: '';
   width: 53px;
   height: 4px;
