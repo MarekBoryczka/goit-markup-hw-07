@@ -2,7 +2,7 @@
   padding: 40px;
 }
 
-.modal-form__group > h3 {
+.modal-group__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -39,8 +39,7 @@
   fill: var(--main-color);
 }
 
-.form-item__label
-  /* .textarea_p*/ {
+.form-item__label {
   color: var(--lorem-ipsum-color);
   font-weight: 400;
   font-size: 12px;

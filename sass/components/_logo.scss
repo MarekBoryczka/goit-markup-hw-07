@@ -4,12 +4,12 @@
   font-size: 26px;
   color: var(--brand-color);
   margin-right: 93px;
-}
 
-.logo--dark {
-  color: var(--icons-close-color);
-}
+  &--dark {
+    color: var(--icons-close-color);
+  }
 
-.logo--light {
-  color: var(--text_on_background-color);
+  &--light {
+    color: var(--text_on_background-color);
+  }
 }
