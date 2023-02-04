@@ -3,8 +3,32 @@
   padding: 60px 0px;
 }
 
+.footer__title {
+  color: var(--text_on_background-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 12px;
+  margin-bottom: 20px;
+}
+
 .footer-adress {
   line-height: 24px;
+
+  &__link {
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover,
+    &:focus {
+      transition-property: background-color, color, box-shadow, border, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0;
+      color: var(--brand-color);
+    }
+  }
 
   &:first-child {
     padding-top: 20px;
@@ -30,30 +54,6 @@
       color: var(--brand-color);
     }
   }
-
-  .footer-adress__link {
-    color: rgba(255, 255, 255, 0.6);
-
-    &:hover,
-    &:focus {
-      transition-property: background-color, color, box-shadow, border, fill;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-delay: 0;
-      color: var(--brand-color);
-    }
-  }
-}
-
-.join__title {
-  color: var(--text_on_background-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  padding-top: 12px;
-  margin-bottom: 20px;
 }
 
 .social {
@@ -86,17 +86,6 @@
   &__icon {
     fill: var(--text_on_background-color);
   }
-}
-
-.footer-form__title {
-  color: var(--text_on_background-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  padding-top: 12px;
-  padding-bottom: 20px;
 }
 
 .sign-up {

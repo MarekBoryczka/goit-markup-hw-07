@@ -47,6 +47,16 @@
       color: var(--brand-color);
       fill: var(--brand-color);
     }
+    &--is_active::after {
+      content: '';
+      width: 53px;
+      height: 4px;
+      display: block;
+      border-radius: 2px;
+      background-color: var(--brand-color);
+      position: absolute;
+      top: 76px;
+    }
   }
 }
 

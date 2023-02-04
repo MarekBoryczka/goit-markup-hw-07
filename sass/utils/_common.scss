@@ -1,22 +1,23 @@
 .section {
   padding: 94px 0px;
-}
 
+  &__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    padding-bottom: 32px;
+  }
+  &--dark {
+    background-color: var(--our-team-color);
+  }
+}
 .container {
   max-width: 1200px;
   margin: 0px auto;
-}
-.container__footer {
-  display: flex;
-  justify-content: space-between;
-}
-.section__header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  padding-bottom: 32px;
-}
-.section--dark {
-  background-color: var(--our-team-color);
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
 }
