@@ -1,8 +1,8 @@
-.modal-form {
+.form {
   padding: 40px;
 }
 
-.modal-group__title {
+.form__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -11,35 +11,35 @@
   padding-bottom: 12px;
 }
 
-.form-item {
+.form__item {
   position: relative;
 }
 
-.form-item__icon-person {
+.form__iconPerson {
   position: absolute;
   top: 34px;
   left: 14px;
 }
 
-.form-item__icon-phone {
+.form__iconPhone {
   position: absolute;
   top: 33px;
   left: 14px;
 }
 
-.form-item__icon-email {
+.form__iconEmail {
   position: absolute;
   top: 32px;
   left: 13px;
 }
 
-.form-item__icon-person,
-.form-item__icon-phone,
-.form-item__icon-email {
+.form__iconPerson,
+.form__iconPhone,
+.form__iconEmail {
   fill: var(--main-color);
 }
 
-.form-item__label {
+.form__label {
   color: var(--lorem-ipsum-color);
   font-weight: 400;
   font-size: 12px;
@@ -47,7 +47,7 @@
   letter-spacing: 0.01em;
 }
 
-.form-item__input {
+.form__input {
   width: 100%;
   padding: 11px 0px 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -56,7 +56,7 @@
   margin-bottom: 10px;
 }
 
-.form-item__textarea {
+.form__textarea {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
@@ -66,12 +66,31 @@
   margin-top: 4px;
 }
 
-.form-item__input,
-.form-item__textarea {
+.form__input,
+.form__textarea {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
+}
+
+.form__textarea:focus,
+.form__input:focus {
+  transition-property: outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+  outline: 1px solid var(--brand-color);
+}
+
+.form-item:focus-within .form__iconPerson,
+.form-item:focus-within .form__iconPhone,
+.form-item:focus-within .form__iconEmail {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+  fill: var(--brand-color);
 }
 
 .form-item__checkbox {
@@ -123,24 +142,12 @@
   color: var(--brand-color);
 }
 
-.form-item__textarea:focus,
-.form-item__input:focus,
 .form-item__input-checkbox:focus {
   transition-property: outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
   outline: 1px solid var(--brand-color);
-}
-
-.form-item:focus-within .form-item__icon-person,
-.form-item:focus-within .form-item__icon-phone,
-.form-item:focus-within .form-item__icon-email {
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
-  fill: var(--brand-color);
 }
 
 .modal_form_btn {
